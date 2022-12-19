@@ -60,7 +60,7 @@ include_once ("Controlador.php");
             
           </div>
           
-          <div class="col-2">
+          <div class="col-2" id="container_previews">
             <div class="text-center">
               <img id="previewImg" src="" class="rounded" alt="">
             </div>
