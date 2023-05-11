@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "387d5749-9e09-4421-96fb-733b5cb6ebc2",
+		"name": "API-USUARIOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/users findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api_rest_usuarios/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_rest_usuarios",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\": \"Jovany\",\r\n    \"Apellido\": \"Gualdron\",\r\n    \"Edad\": 22,\r\n    \"TipoDocumento\": \"CC\",\r\n    \"Foto\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAQAAAD/5HvMAAAB20lEQVRo3u2Xv0tCURTHP1hutjmZgpsELW+T/gZxS4igTYiChqayyL3V0dWtoUWpf0DDVSQiB0lwEILAlkTkNZRwrz976nvd6HzPeM8798O557x7LohEIpFI9L8V4YgiDd55p0GRIyK/BxMiTx97xPrkCf0GTpLuGMzQuiS9xjlhMBXHxmbAibfZmY3zhZT0rna6c3G+Ds6jWspr2/bIESdAgDg5etpa3gucsNZZbSxt1aKtdVzYfaBjLTvW2LqlZenYfaCSsl1uokdO8Si5D/SkbBef6BFXPJ7cB1I7bGOix4bWaf8PyLgjM66ojWt7436Mxl0dBl6uxo0fBg5oBo6wBg75Bj6DRCKRu9oixQUFqjRpYWPzQZMqBS5IseUdyDan3PI69y575ZZTtt3NSZbHH93zqj2SXX2+fOxScYyiWoVdfKvCSVBfCmZodRLLwwS5WQnM0G4ILlfAzRkjxj3XpNkhyub3tB1lhzTX3M0YTZqLF3qMzsSQD5xjzakIHxZnU+quQ2wRHD+1sVAtLh2+IzbJ8DIWp4bfOdDhSJBn9lhbsEdT2nvXxubQeZiyNgVesb5Uc6yT0abLsvMQb8rnByv5fewrEd+cf267bAIkQAIkEolEItHf0CdWgY4FD7NS5AAAAABJRU5ErkJggg==\",\r\n    \"Rol\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api_rest_usuarios/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_rest_usuarios",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 40,\r\n    \"Nombre\": \"Cesar Azael\",\r\n    \"Apellido\": \"Bonilla Ocoro\",\r\n    \"Edad\": 21,\r\n    \"TipoDocumento\": \"CC\",\r\n    \"Foto\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAQAAAD/5HvMAAAB20lEQVRo3u2Xv0tCURTHP1hutjmZgpsELW+T/gZxS4igTYiChqayyL3V0dWtoUWpf0DDVSQiB0lwEILAlkTkNZRwrz976nvd6HzPeM8798O557x7LohEIpFI9L8V4YgiDd55p0GRIyK/BxMiTx97xPrkCf0GTpLuGMzQuiS9xjlhMBXHxmbAibfZmY3zhZT0rna6c3G+Ds6jWspr2/bIESdAgDg5etpa3gucsNZZbSxt1aKtdVzYfaBjLTvW2LqlZenYfaCSsl1uokdO8Si5D/SkbBef6BFXPJ7cB1I7bGOix4bWaf8PyLgjM66ojWt7436Mxl0dBl6uxo0fBg5oBo6wBg75Bj6DRCKRu9oixQUFqjRpYWPzQZMqBS5IseUdyDan3PI69y575ZZTtt3NSZbHH93zqj2SXX2+fOxScYyiWoVdfKvCSVBfCmZodRLLwwS5WQnM0G4ILlfAzRkjxj3XpNkhyub3tB1lhzTX3M0YTZqLF3qMzsSQD5xjzakIHxZnU+quQ2wRHD+1sVAtLh2+IzbJ8DIWp4bfOdDhSJBn9lhbsEdT2nvXxubQeZiyNgVesb5Uc6yT0abLsvMQb8rnByv5fewrEd+cf267bAIkQAIkEolEItHf0CdWgY4FD7NS5AAAAABJRU5ErkJggg==\",\r\n    \"Rol\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api_rest_usuarios/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_rest_usuarios",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/{userId} delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api_rest_usuarios/index/28",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_rest_usuarios",
+						"index",
+						"28"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Quitar la ext .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+# Redireccionar al index si no se encuentra la ruta especificada
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+?)/?$ users.php?url=$1 [L,QSA]
