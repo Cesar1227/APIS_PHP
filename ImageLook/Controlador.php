@@ -23,7 +23,7 @@ class Controlador{
 	}
 
 	function peticion($keyWord,$category){
-		if($category==""){
+		if($category==""){   
 			$param=["key"=> '13119377-fc7e10c6305a7de49da6ecb25',"lang" => $this->lang, "per_page" => self::PER_PAGE ,"q"=>$keyWord];
 		}else{
 			$param=["key"=> '13119377-fc7e10c6305a7de49da6ecb25',"lang" => $this->lang , "per_page" => self::PER_PAGE, "q"=>$keyWord,"category" => $category];
